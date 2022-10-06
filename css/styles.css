@@ -37,6 +37,7 @@ body {
     background-color: var(--white);
     width: 100%;
     height: 100vh;
+
 }
 
 /** GLOBALES **/
@@ -72,6 +73,9 @@ img {
     background-image: linear-gradient(to right, var(--gVeryLightRed), var(--gLightRed));
     min-height: 40rem;
     border-bottom-left-radius: 6rem;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
 }
 
 .encabezado a {
@@ -85,6 +89,8 @@ img {
     place-items: center;
     padding: 4rem 0;
     /* border: 1px solid black; */
+    /* position: relative;
+    z-index: 1; */
 }
 
 .izq {
@@ -110,6 +116,10 @@ img {
 }
 
 /* Portada */
+/* .portada {
+    position: relative;
+    z-index: 1;
+} */
 .portada-title {
     font-size: 5rem;
     color: var(--white);
@@ -143,3 +153,56 @@ img {
     background-color: var(--white);
     color: var(--lightRed);
 }
+
+.bg-portada {
+    position: fixed;
+    z-index: -9999;
+    top: -95rem;
+    right: -93rem;
+    /* background-size: cover; */
+    max-width: 230rem;
+}
+
+/* Cuerpo */
+.content-page {
+    position: relative;
+    z-index: 0;
+    background-color: var(--white);
+    overflow: hidden;
+    
+}
+
+.cp-title {
+    margin-top: 0;
+    padding-top: 8rem;
+    color: var(--veryDarkBlue);
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+.cp-body {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+
+.cbt-title {
+    color: var(--veryDarkBlue);
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.cbt-text {
+    color: var(--veryDarkGrayishBlue);
+    font-size: 1.3rem;
+}
+
+.cp-body-bg {
+    max-width: 56rem;
+    position: fixed;
+    right: -15rem;
+    top: 45rem;
+}
+
+.main-contenido {margin-bottom: 8rem;}
