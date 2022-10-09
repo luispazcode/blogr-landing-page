@@ -155,7 +155,7 @@ img {
 }
 
 .bg-portada {
-    position: fixed;
+    position: absolute;
     z-index: -9999;
     top: -95rem;
     right: -93rem;
@@ -258,4 +258,76 @@ img {
     position: absolute;
     top: -35rem;
     left: -15rem;
+}
+
+/* Banner Two */
+
+.banner-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    grid-template-areas: "img content-text";
+    margin-bottom: 15rem;
+}
+
+.banner-two-content {
+    grid-area: content-text;
+}
+
+.banner-two-image {
+    position: absolute;
+    max-width: 55rem;
+    top: -2rem;
+    left: -28rem;
+}
+
+.btwo-title {
+    color: var(--veryDarkBlue);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.btwo-text {
+    color: var(--veryDarkGrayishBlue);
+    font-size: 1.3rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: 5rem;
+    background-color: var(--veryDarkBlackBlue);
+    border-top-right-radius: 8rem;
+}
+
+.content-footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    padding: 6rem 0;
+    
+}
+
+.content-footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.content-footer li {
+    list-style: none;
+    color: var(--white);
+    padding: 0;
+}
+
+.content-footer li:first-child {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.attribution {
+    background-color: var(--veryDarkBlackBlue);
+    color: var(--white);
+}
+
+.attribution p {
+    margin: 0;
 }
